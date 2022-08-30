@@ -1,5 +1,65 @@
-.App {
 
-  font-family: 'DM Sans', sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0 ; 
+    padding: 0;
+  }
+/* .app{
+    
+        font-family: 'DM Sans', sans-serif;
+} */
+:root{
+    --background: #FFFFFF;
+    --darkBlue_primary: #0B0D39;
+    --darkBlue_primary_transpent:  rgba(11, 13, 57, 0.6);
+    --lightBlue_primary: #356DFF;
+    --navBar: #FFFFFF;
+    --lightBlue_secondery_cardsbg: #F2FBFC;
+
+    --lightBlue_style: #1E90FF66;
+    --yellow_style: #FFB300;
+    --orange_style: #F65529;
+    --darkerOrange_style: #F3582B;
+    --purple_style:#7B53FF;
+    --green_style:#7EC68F;
+
+    --orange_text:#FF9100;
+    --ligtOrange_textbg:#FF910033;
+
+    --darkBlue_footertxt:#0B0D39CC;
+
+    --cardsShadow: #0B0D3914;
+--grey:#DCDCE3;
+    --white: #FFFFFF;
+    --black: #000000;
+  
 }
 
+
+[data-theme='dark'] {
+    --background: #0B0D39;
+    --darkBlue_primary: #FFFFFF;
+    --darkBlue_primary_transpent:  rgba(255, 255, 255, 0.863);
+    --navBar:#1A1C46;
+    --lightBlue_secondery_cardsbg: #1A1C46;
+    --lightBlue_style: #1E90FF66;
+    --darkBlue_footertxt:#ffffffbd;
+  
+
+}
+
+ .app {
+    color: var(--text-primary);
+    background-color: var(--background);
+ 
+    padding: 20px;
+    height: calc(100vh);
+    transition: all .5s;
+  } 
+  button {
+    color: var(--darkBlue_primary);
+    background-color: var(--background);
+    border: 2px var(--text-primary) solid;
+    float: right;
+    transition: all .5s;
+  } 
