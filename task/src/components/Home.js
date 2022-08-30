@@ -1,14 +1,11 @@
-import React from "react";
 import Header from "./Header";
-import "./Home.css";
 
 
-function Home(params) {
-    return (
-        <>
-        <Header/>
-        </>
-    )
+function Home() {
+    <>
+   
+    </>
+    
 }
 
 export default Home;

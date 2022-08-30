@@ -1,27 +1,34 @@
-import React from "react";
+
 import "./App.css";
-import { createContext, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+
+import { createContext } from "react";
 import Home from "./components/Home";
 import Header from "./components/Header";
-export const ThemeContext = createContext(null);
+import useLocalStorage from 'use-local-storage'
+
+
 
 function App() {
- const [theme, setTheme] = useState("light");
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
- const toggleTheme = () => {
-  setTheme((curr) => (curr === "light" ? "dark" : "light"))
- }
-
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme}}>
-      <div className="App" id={theme}>
+    <>
      
-      <Routes>
-          <Route path="/" exact element={<Home />} />
-          </Routes>
-      </div>
-    </ThemeContext.Provider>
+     <div className="app" data-theme={theme}>
+    
+      
+         <Header switchTheme={switchTheme} />
+        <Home /> 
+   {/* <button onClick={switchTheme} theme={theme}>{theme === 'light'? 'Dark': 'Light'} mode</button> */}
+        </div>
+     
+    
+    </>
   );
 }
 

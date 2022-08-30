@@ -1,9 +1,40 @@
 import React from "react";
 import "./Header.css";
+import styled from "styled-components";
+import { CgSun } from "react-icons/cg";
+import { HiMoon } from "react-icons/hi";
 import logo from "../assets/logo.svg";
+import useLocalStorage from "use-local-storage";
 import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap";
 
-function Header() {
+// const NavContainer = styled.div`
+//   width: 100%;
+// `
+
+// const StyledNavbar = styled(Navbar)`
+//   width: 80%;
+//   margin: 0 auto;
+//   background-color: var(--background);
+//   margin-top: 1.5em;
+//   box-shadow: 0px 19px 55px #00000014;
+//   border-radius: 62px;
+// `
+// const ContentContainer = styled(Container)`
+//   padding: 0.8em;
+// `
+// const StyledNav = styled(Nav)`
+//   margin: 0 auto;
+//   margin-top: 0.5em;
+//   gap: 1em;
+// `
+
+
+
+function Header({switchTheme, theme}) {
+
+ 
+
+
   return (
     <>
     <div className="nav-container">
@@ -40,19 +71,18 @@ function Header() {
               </NavDropdown>
 
               <Nav.Link className="li" href="#About">About</Nav.Link>
-              <Nav.Link className="li" href="#Feedback">nFeedback</Nav.Link>
+              <Nav.Link className="li" href="#Feedback">Feedback</Nav.Link>
               <div className="dot"></div>
             </Nav>
             <div className="btns-container">
+            <button className="primary-btn" onClick={switchTheme}>{theme === 'light'? 'Dark': 'Light'} mode</button>
             <button className="secondary-btn">Download app</button>
-            <button className="primary-btn">Dark mode</button>
             </div>
-            {/* <Button  className="secondary-btn">Download app</Button>
-            <Button className="primary-btn" >Dark mode</Button> */}
+  
 
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar >
       </div>
     </>
   );
