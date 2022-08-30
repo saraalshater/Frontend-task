@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 1.5em;
+  box-shadow: 0px 19px 55px #00000014;
+  border-radius: 62px;
+}
+
+.content-container {
+  padding: 0.8em;
+}
+.me-auto {
+  margin: 0 auto;
+  margin-top: 0.5em;
+  gap: 1em;
+}
+.me-auto .dot {
+  width: 6px;
+  height: 6px;
+  background: #356dff;
+  border-radius: 50%;
+  margin-top: 40px;
+  opacity: 0;
+}
+
+.li {
+  color: #6d6e88;
+}
+.li:focus {
+  color: #0b0d39;
+  font-weight: 600;
+}
+
+#basic-nav-dropdown:focus {
+  color: #0b0d39;
+  font-weight: 600;
+}
+
+.me-auto .li:nth-child(1):hover ~ .dot {
+  transform: translateX(-451px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(1):focus ~ .dot {
+  transform: translateX(-451px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(2):hover ~ .dot {
+  transform: translateX(-361px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(3):hover ~ .dot {
+  transform: translateX(-253px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(4):hover ~ .dot {
+  transform: translateX(-155px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(4):focus ~ .dot {
+  transform: translateX(-155px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(5):hover~ .dot {
+  transform: translateX(-67px);
+  opacity: 1;
+}
+.me-auto .li:nth-child(5):focus ~ .dot {
+  transform: translateX(-67px);
+  opacity: 1;
+}
+
+.btns-container {
+  margin-right: 1em;
+}
+
+button {
+
+  padding: 0.8em 1.5em;
+ 
+}
+
+.secondary-btn {
+  margin: 0em 0.5em;
+  color: #0b0d39;
+  background-color: #ffffff;
+  border: #ececec solid 2px;
+  border-radius: 43px;
+}
+.secondary-btn:hover {
+
+  background-color: #ececec;
+ 
+ 
+  transition: 0.3s;
+}
+
+.primary-btn {
+  margin: 0em 0.5em;
+  color: #ffffff;
+  background-color: #0b0d39;
+  border: #0b0d39 solid 2px;
+  border-radius: 43px;
+}
+
+.primary-btn:hover {
+ 
+  
+  background-color: #040518;
+ 
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1262px) {
+  button {
+    
+  
+    padding: 0.8em 0.8em;
+   
+  }
+
+
+  .secondary-btn {
+    margin: 0em 0.3em;
+    
+  }
+  .primary-btn {
+    margin: 0em 0.3em;
+  }
+  
+}
+
+@media only screen and (max-width: 1200px) {}
