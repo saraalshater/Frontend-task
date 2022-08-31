@@ -2,7 +2,7 @@
     width: 100%;
 }
 .intro{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
   
@@ -10,7 +10,7 @@
 
 .intro-text{
     padding-top: 6em;
-    width: 40%;
+    width: 45%;
 }
 h1{
     color:var(--darkBlue_primary) ;
@@ -22,10 +22,33 @@ h1{
  }
 
 .intro-illustration{
-    width: 60%;
+    width: 55%;
     padding: 4em 0em 5em 5em ;
     position:relative;
 }
+.intro-btn-container{
+    float: left;
+}
+.discuss-btn{
+    background-color: var(--lightBlue_primary);
+    border: var(--lightBlue_primary) 1.5px solid ;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 43px 43px 43px 12px;
+    color: var(--white);
+}
+
+.learn-btn{
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 43px 43px 43px 12px;
+    color: var(--text) ;
+  
+    border: var(--text) 1.5px dashed ;
+    background:transparent;
+
+}
+
 
 .yellow-circle{
     position: absolute;

@@ -14,8 +14,8 @@ function Home() {
               model.
             </p>
             <div className="intro-btn-container">
-              <button></button>
-              <button></button>
+              <button className="learn-btn">Learn more</button>
+              <button className="discuss-btn">Lets discuss</button>
             </div>
           </div>
           <div className="intro-illustration">
