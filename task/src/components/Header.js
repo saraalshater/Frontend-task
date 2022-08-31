@@ -1,10 +1,9 @@
 import React from "react";
 import "./Header.css";
 import styled from "styled-components";
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
+
 import logo from "../assets/logo.svg";
-import useLocalStorage from "use-local-storage";
+
 import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap";
 
 // const NavContainer = styled.div`
@@ -41,14 +40,15 @@ function Header({switchTheme, theme}) {
       <Navbar className="navbar" expand="xl" >
         <Container className="content-container">
           <Navbar.Brand href="#home">
-          <img src={logo} alt="logo" style={{width:"130px", marginLeft: "1em"}}/>
+          {/* style={{width:"130px", marginLeft: "1em"}} */}
+          <img src={logo} alt="logo" className="logo"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-expand-xl" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="li" href="#home">Home</Nav.Link>
              
-              <NavDropdown className="li" title="Solutions" id="basic-nav-dropdown">
+              <NavDropdown   className="li" title="Solutions" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Option1</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                 Option2

@@ -15,6 +15,7 @@
     --lightBlue_primary: #356DFF;
     --navBar: #FFFFFF;
     --lightBlue_secondery_cardsbg: #F2FBFC;
+    --text:#0B0D39;
 
     --lightBlue_style: #1E90FF66;
     --yellow_style: #FFB300;
@@ -37,6 +38,7 @@
 
 
 [data-theme='dark'] {
+
     --background: #0B0D39;
     --darkBlue_primary: #FFFFFF;
     --darkBlue_primary_transpent:  rgba(255, 255, 255, 0.863);
@@ -44,17 +46,20 @@
     --lightBlue_secondery_cardsbg: #1A1C46;
     --lightBlue_style: #1E90FF66;
     --darkBlue_footertxt:#ffffffbd;
+    --text: #FFFFFF;
   
 
 }
+
 
  .app {
     color: var(--text-primary);
     background-color: var(--background);
  
     padding: 20px;
-    height: calc(100vh);
+    height: 100%;
     transition: all .5s;
+    z-index: -2;
   } 
   button {
     color: var(--darkBlue_primary);
