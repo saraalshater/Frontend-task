@@ -1,104 +1,274 @@
-.homeContainer{
-    width: 100%;
+.homeContainer {
+  width: 100%;
 }
-.intro{
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-  
-}
-
-.intro-text{
-    padding-top: 6em;
-    width: 45%;
-}
-h1{
-    color:var(--darkBlue_primary) ;
-    font-size: 48px !important;
-    font-weight: bold !important;
- }
- span{
-     color:var(--lightBlue_primary);
- }
-
-.intro-illustration{
-    width: 55%;
-    padding: 4em 0em 5em 5em ;
-    position:relative;
-}
-.intro-btn-container{
-    float: left;
-}
-.discuss-btn{
-    background-color: var(--lightBlue_primary);
-    border: var(--lightBlue_primary) 1.5px solid ;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 43px 43px 43px 12px;
-    color: var(--white);
+.intro {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 3em;
 }
 
-.learn-btn{
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 43px 43px 43px 12px;
-    color: var(--text) ;
-  
-    border: var(--text) 1.5px dashed ;
-    background:transparent;
-
+.scroll-icon {
+  filter: var(--scroll-icon);
+}
+.top-red-circle {
+  position: absolute;
+  margin-top: 55px;
+  left: 60px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--orange_style);
+}
+.purple-circle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 550px;
+  left: 140px;
+  border-radius: 100%;
+  background-color: var(--purple_style);
+}
+.intro-text {
+  padding-top: 6em;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+h1 {
+  color: var(--darkBlue_primary);
+  font-size: 2.8rem !important;
+  font-weight: bold !important;
 }
 
-
-.yellow-circle{
-    position: absolute;
-  top:3em;
-    margin-left: 6em;
-    width: 8%;
-height: 7.5%;
-background-color: var(--yellow_style);
-border-radius: 100%;
-z-index: 1;
+p {
+  color: var(--darkBlue_primary_transpent);
 }
-.big-circle{
-   
-margin-left: 3em;
-
-width: 90%;
-height: 90%;
-/* right: 10em; */
-background-color: var(--lightBlue_style);
-border-radius: 100%;
-z-index: 3; 
+span {
+  color: var(--lightBlue_primary);
 }
-.red-circle{
-    position: absolute;
-  
-  right:-2em;
+
+.intro-illustration {
+  width: 55%;
+  padding: 4em 0em 5em 5em;
+  position: relative;
+}
+.intro-btn-container {
+  display: flex;
+  gap: 1em;
+}
+.discuss-btn {
+  background-color: var(--lightBlue_primary);
+  border: var(--lightBlue_primary) 1.5px solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 43px 43px 43px 12px;
+  color: var(--white);
+}
+
+.learn-btn {
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 43px 43px 43px 12px;
+  color: var(--text);
+
+  border: var(--text) 1.5px solid;
+  background: transparent;
+}
+
+.yellow-circle {
+  position: absolute;
+  top: 3em;
+  margin-left: 6em;
+  width: 8%;
+  height: 7.5%;
+  background-color: var(--yellow_style);
+  border-radius: 100%;
+  z-index: 1;
+}
+.big-circle {
+  margin-left: 3em;
+
+  width: 90%;
+  height: 90%;
+  /* right: 10em; */
+  background-color: var(--lightBlue_style);
+  border-radius: 100%;
+  z-index: 3;
+}
+.red-circle {
+  position: absolute;
+
+  right: -2em;
   bottom: 9em;
-   
-    width: 3%;
-height: 3%;
 
-background-color: var(--darkerOrange_style);
-border-radius: 100%;
+  width: 3%;
+  height: 3%;
+
+  background-color: var(--darkerOrange_style);
+  border-radius: 100%;
+}
+.green-circle{
+    width: 50px;
+  height: 50px; 
+  border-radius: 100%;
+  position: absolute;
+  top:1em;
+  left: 3em;
+  background-color: var(--green_style);
 }
 
+.scroll-mouse-container{
+    width: 100%;
+    text-align: center;
+  position:absolute;
+  top:37em;
+}
+
+.testimonials {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* padding: 4em 0em; */
+  position: relative;
+}
+.zindex {
+  z-index: 2;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.testimonials-bg {
+  width: 90%;
+  height: 95vh;
+  bottom: 2em;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: var(--lightBlue_secondery_cardsbg);
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 4em 0em; */
+}
+.testimonials-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+h2 {
+  color: var(--darkBlue_primary);
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  display: inline-block;
+  text-align: left;
+}
+
+mark {
+  display: inline-block;
+  padding: 0.7em 1em !important;
+  border-radius: 43px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--orange_text);
+  background-color: var(--ligtOrange_textbg) !important;
+}
+
+@media only screen and (max-width: 1044px) {
+  .big-circle {
+    /* margin-left: 5em; */
+    /* width: 100%;
+        height: 50%; */
+  }
+  .intro {
+  }
+  .intro-illustration {
+    width: 55%;
+    padding: 6em 0em 5em 2em;
+    position: relative;
+  }
+
+  .intro-text {
+    padding-top: 5em;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+  h1 {
+    color: var(--darkBlue_primary);
+    font-size: 2.4rem !important;
+    font-weight: bold !important;
+  }
+  .discuss-btn {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .learn-btn {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .top-red-circle {
+    display: none;
+  }
+  .purple-circle {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 770px) {
+  .testimonials-cards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .intro-illustration {
+    display: none;
+  }
+.green-circle{
+    display: none;
+}
+  .intro {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+  }
 
-    .intro-illustration{
-        display:none;
-    }
+  .intro-text {
+    width: 95%;
+    padding-top: 4em;
+  }
+  .intro-btn-container {
+    display: inline-grid;
+  }
 
-    .intro{
-        width: 95%;
-        margin: 0 auto;
-        display: flex;
-      
-    }
+  .discuss-btn {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 
-    .intro-text{
-        width: 70%;
-    }
+  .learn-btn {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }

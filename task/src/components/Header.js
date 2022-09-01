@@ -3,7 +3,8 @@ import "./Header.css";
 import styled from "styled-components";
 
 import logo from "../assets/logo.svg";
-
+import logoDark from "../assets/logoDark.svg";
+import twitter from "../assets/twitter.svg";
 import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap";
 
 // const NavContainer = styled.div`
@@ -41,7 +42,8 @@ function Header({switchTheme, theme}) {
         <Container className="content-container">
           <Navbar.Brand href="#home">
           {/* style={{width:"130px", marginLeft: "1em"}} */}
-          <img src={logo} alt="logo" className="logo"/>
+          {theme === 'light'? <img src={logo} alt="logo" className="logo"/> : <img src={logoDark} alt="logo" className="logo"/>}
+          
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-expand-xl" />
           <Navbar.Collapse id="basic-navbar-nav">
