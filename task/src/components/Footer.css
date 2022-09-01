@@ -1,0 +1,161 @@
+.footer-container {
+  width: 100%;
+  padding-top: 5em;
+}
+
+.footer-info {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.blue-circle{
+    width: 20px;
+    height: 20px;
+    left:5em;
+   
+    border-radius: 100%;
+    position:absolute;
+    background-color: #356dff;
+}
+
+.orange-circle{
+    
+        width: 20px;
+        height: 20px;
+        right:5em;
+       top: 85em;
+        border-radius: 100%;
+        position:absolute;
+        background-color: #F3582B;
+    
+}
+.footer-left {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer-email {
+  display: flex;
+}
+.footer-email > h2 {
+  font-weight: 400 !important;
+}
+
+.email-icon {
+ 
+  display: inline-block;
+  background: #356dff;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-left: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 0.5em;
+}
+.footer-social-media > p {
+   margin-top: 10px;
+  }
+
+.insta-icon,
+.twitter-icon,
+.fb-icon {
+  border: #ececec solid 2px;
+  background-color: var(--white) ;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.insta-icon{
+
+}
+.footer-right {
+  width: 50%;
+}
+
+.footer-navigations-container {
+  display: flex;
+  gap: 3em;
+}
+.footer-nav-one > a,
+.footer-nav-two > a,
+.footer-nav-three > a {
+  display: block;
+  white-space: pre-line;
+  text-decoration: none;
+  color: var(--darkBlue_primary_transpent);
+  text-align: left;
+}
+
+.footer-nav-one > a:focus,
+.footer-nav-two > a:focus,
+.footer-nav-three > a:focus {
+  font-weight: bold;
+  color: var(--darkBlue_primary);
+}
+
+.footer-nav-one > ul > li,
+.footer-nav-two > ul > li,
+.footer-nav-three > ul > li {
+  color: #356dff;
+  list-style: none;
+}
+
+.footer-social-media {
+  display: flex;
+}
+
+.footer-copy-rights {
+  padding: 2em 0em;
+  margin: 0 auto;
+  width: 75%;
+  border-top: 0.5px solid #dbdbe6;
+}
+
+.footer-copy-rights > p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 935px) {
+  .footer-email > h2 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer-info {
+    display: block;
+  }
+  .footer-container {
+    width: 100%;
+    padding-top: 1em;
+  }
+  
+  .footer-navigations-container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .footer-copy-rights {
+    width: 100%;
+    background-color: #356dff;
+    
+  }
+  .orange-circle{
+    display: none;
+  }
+  .blue-circle{
+    display: none;
+  }
+
+}

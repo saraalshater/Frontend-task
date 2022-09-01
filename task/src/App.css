@@ -8,6 +8,11 @@
     
         font-family: 'DM Sans', sans-serif;
 } */
+
+
+
+
+
 :root{
     --background: #FFFFFF;
     --darkBlue_primary: #0B0D39;
@@ -26,14 +31,16 @@
 
     --orange_text:#FF9100;
     --ligtOrange_textbg:#FF910033;
-
+--right-btn:#0B0D39;
     --darkBlue_footertxt:#0B0D39CC;
 
-    --cardsShadow: #0B0D3914;
+    --card: #FFFFFF;
 --grey:#DCDCE3;
     --white: #FFFFFF;
     --black: #000000;
   
+--scroll-icon:invert(73%) sepia(60%) saturate(3%) hue-rotate(23deg) brightness(103%) contrast(95%);
+    
 }
 
 
@@ -47,7 +54,10 @@
     --lightBlue_style: #1E90FF66;
     --darkBlue_footertxt:#ffffffbd;
     --text: #FFFFFF;
-  
+
+    --card: #2B2D5B;
+    --scroll-icon: invert(93%) sepia(43%) saturate(26%) hue-rotate(63deg) brightness(112%) contrast(100%);
+    --right-btn: #356DFF;
 
 }
 
@@ -55,8 +65,7 @@
  .app {
     color: var(--text-primary);
     background-color: var(--background);
- 
-    padding: 20px;
+
     height: 100%;
     transition: all .5s;
     z-index: -2;
